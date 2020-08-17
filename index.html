@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Interval Timer Js - Demo</title>
+</head>
+<body>
+<div>
+    <h1>Timer</h1>
+    <h2 id="timer">0</h2>
+    <button type="button" onclick="window.location.reload()">Refresh</button>
+</div>
+<script src="../src/interval-timer.js" type="application/javascript"></script>
+<script type="text/javascript">
+
+    let data = setIntervalTimer(() => alert('work'), 10);
+    document.getElementById("timer").innerHTML = data;
+
+</script>
+</body>
+</html>
